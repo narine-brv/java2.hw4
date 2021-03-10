@@ -14,7 +14,13 @@ public class Garage <C extends Car> implements Printable <C> {
 
 
     @Override
-    public void print() {
+    public C print() {
         System.out.println(getCars().getClass().getSimpleName() + " выехал из завода");
+        return cars;
+    }
+
+    @Override
+    public void print(C c) {
+        System.out.println(c.getClass().getSimpleName() + " заехал в гараж");
     }
 }

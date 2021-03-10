@@ -2,5 +2,6 @@ package com.narine;
 
 public interface Printable <C> {
 
-    void print ();
+    C print ();
+    void print (C c);
 }
